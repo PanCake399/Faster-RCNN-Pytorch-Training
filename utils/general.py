@@ -218,7 +218,7 @@ def save_model(
                 'val_map_05': val_map_05,
                 'config': config,
                 'model_name': model_name
-                }, f"{OUT_DIR}/last_model.pth")
+                }, f"{OUT_DIR}/last_model.pt")
 
 def save_model_state(model, OUT_DIR, config, model_name):
     """
