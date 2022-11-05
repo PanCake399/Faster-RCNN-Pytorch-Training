@@ -60,7 +60,7 @@ class SaveBestModel:
                 'model_state_dict': model.state_dict(),
                 'config': config,
                 'model_name': model_name
-                }, f"{OUT_DIR}/best_model.pth")
+                }, f"{OUT_DIR}/best_model.pt")
 
 def show_tranformed_image(train_loader, device, classes, colors):
     """
@@ -233,7 +233,7 @@ def save_model_state(model, OUT_DIR, config, model_name):
                 'model_state_dict': model.state_dict(),
                 'config': config,
                 'model_name': model_name
-                }, f"{OUT_DIR}/last_model_state.pth")
+                }, f"{OUT_DIR}/last_model_state.pt")
 
 def denormalize(x, mean=None, std=None):
     # Shape of x here should be [B, 3, H, W].
